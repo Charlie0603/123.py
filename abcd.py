@@ -9,22 +9,22 @@ if num == n1: st.write("對中 200 萬元！")    # 對中特獎
 # 頭獎判斷
 for i in n2:
     if num == i:
-        st.write("對中 20 萬元！")   # 對中頭獎
+        st.write("對中 20 萬元！")
         break
     if num[-7:] == i[-7:]:
-        st.write("對中 4 萬元！")    # 末七碼相同
+        st.write("對中 4 萬元！")  
         break
     if num[-6:] == i[-6:]:
-        st.write("對中 1 萬元！")    # 末六碼相同
+        st.write("對中 1 萬元！") 
         break
     if num[-5:] == i[-5:]:
-        st.write("對中 4000 元"')   # 末五碼相同
+        st.write("對中 4000 元")
         break
     if num[-4:] == i[-4:]:
-        st.write("對中 1000 元！")   # 末四碼相同
+        st.write("對中 1000 元！")   
         break
     if num[-3:] == i[-3:]:
-        st.write("對中 200 元！")    # 末三碼相同
+        st.write("對中 200 元！")  
         break
     else:
       st.write("再接再厲下次加油")
