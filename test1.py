@@ -1,4 +1,5 @@
 import streamlit as st
+st.image("1200x900_979334757942.jpg")
 st.title ("2022年最新發票兌獎程式")
 num=st.text_input('輸入您的發票號碼')
 ns = '05701942' 
