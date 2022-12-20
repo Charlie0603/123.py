@@ -5,6 +5,7 @@ num=st.text_input('輸入您的發票號碼')
 ns = '11174120' 
 n1 = '59276913'                        
 n2 = ['18079936','20591738','64500205']
+n3 = ['ns','n1','n2']
 if num == ns: st.write("對中 1000 萬元！")
 if num == ns: st.image("恭喜中獎.jpg")
 if num == n1: st.write("對中 200 萬元！")
@@ -35,6 +36,6 @@ for i in n2:
         st.write("對中 200 元！")  
         st.image("恭喜中獎.jpg")
         break
-    else:
+    elif num != n3:
         st.write("再接再厲下次加油")
         break
