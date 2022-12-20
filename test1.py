@@ -1,6 +1,6 @@
 import streamlit as st
 st.title ("2022年最新發票兌獎程式")
-st.text_input('輸入您的發票號碼')
+num=st.text_input('輸入您的發票號碼')
 ns = '05701942' 
 n1 = '97718570'                        
 n2 = ['88400675','73475574','53038222'] 
