@@ -15,24 +15,24 @@ for i in n2:
         break
     if num[-7:] == i[-7:]:
         st.write("對中 4 萬元！") 
-         st.image("恭喜中獎.jpg")
+        st.image("恭喜中獎.jpg")
         break
     if num[-6:] == i[-6:]:
         st.write("對中 1 萬元！") 
-         st.image("恭喜中獎.jpg")
+        st.image("恭喜中獎.jpg")
         break
     if num[-5:] == i[-5:]:
         st.write("對中 4000 元")  
-         st.image("恭喜中獎.jpg")
+        st.image("恭喜中獎.jpg")
         break
     if num[-4:] == i[-4:]:
         st.write("對中 1000 元！")  
-         st.image("恭喜中獎.jpg")
+        st.image("恭喜中獎.jpg")
         break
     if num[-3:] == i[-3:]:
         st.write("對中 200 元！")  
-         st.image("恭喜中獎.jpg")
+        st.image("恭喜中獎.jpg")
         break
     else:
-      st.write("再接再厲下次加油")
-      break
+         st.write("再接再厲下次加油")
+         break
