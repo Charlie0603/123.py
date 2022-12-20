@@ -6,9 +6,9 @@ ns = '11174120'
 n1 = '59276913'                        
 n2 = ['18079936','20591738','64500205'] 
 if num == ns: st.write("對中 1000 萬元！")
-st.image("恭喜中獎.jpg")
+if num == ns: st.image("恭喜中獎.jpg")
 if num == n1: st.write("對中 200 萬元！")
-st.image("恭喜中獎.jpg")
+if num == n1: st.image("恭喜中獎.jpg")
 
 for i in n2:
     if num == i:
