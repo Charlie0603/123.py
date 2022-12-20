@@ -36,5 +36,5 @@ for i in n2:
         st.image("恭喜中獎.jpg")
         break
     if num != ['ns','n1','n2']:
-        st.write("再接再厲下次加油")
+        st.write("再接再厲下次加")
         break
