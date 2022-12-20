@@ -36,5 +36,5 @@ for i in n2:
         st.image("恭喜中獎.jpg")
         break
     else:
-         st.write("再接再厲下次加油")
-         break
+        st.write("再接再厲下次加油")
+        break
