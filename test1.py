@@ -1,260 +1,31 @@
-{
-  "nbformat": 4,
-  "nbformat_minor": 0,
-  "metadata": {
-    "colab": {
-      "provenance": [],
-      "authorship_tag": "ABX9TyOUD7IGERFKduXEvY2/7uBi",
-      "include_colab_link": true
-    },
-    "kernelspec": {
-      "name": "python3",
-      "display_name": "Python 3"
-    },
-    "language_info": {
-      "name": "python"
-    }
-  },
-  "cells": [
-    {
-      "cell_type": "markdown",
-      "metadata": {
-        "id": "view-in-github",
-        "colab_type": "text"
-      },
-      "source": [
-        "<a href=\"https://colab.research.google.com/github/Charlie0603/123.py/blob/main/test1.py\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "execution_count": null,
-      "metadata": {
-        "id": "SrHXby_OhfxY"
-      },
-      "outputs": [],
-      "source": [
-        "import streamlit as st\n",
-        "st.title (\"2022年最新發票兌獎程式\")\n",
-        "st.text_input('輸入您的發票號碼')\n",
-        "ns = '05701942'                         # 特別獎\n",
-        "n1 = '97718570'                         # 特獎\n",
-        "n2 = ['88400675','73475574','53038222'] # 頭獎\n",
-        "if num == ns: st.write(\"對中 1000 萬元！\")   # 對中特別獎\n",
-        "if num == n1: st.write(\"對中 200 萬元！\")    # 對中特獎\n",
-        "# 頭獎判斷\n",
-        "for i in n2:\n",
-        "    if num == i:\n",
-        "        st.write(\"對中 20 萬元！\")   # 對中頭獎\n",
-        "        break\n",
-        "    if num[-7:] == i[-7:]:\n",
-        "        st.write(\"對中 4 萬元！\")    # 末七碼相同\n",
-        "        break\n",
-        "    if num[-6:] == i[-6:]:\n",
-        "        st.write(\"對中 1 萬元！\")    # 末六碼相同\n",
-        "        break\n",
-        "    if num[-5:] == i[-5:]:\n",
-        "        st.write(\"對中 4000 元\"')   # 末五碼相同\n",
-        "        break\n",
-        "    if num[-4:] == i[-4:]:\n",
-        "        st.write(\"對中 1000 元！\")   # 末四碼相同\n",
-        "        break\n",
-        "    if num[-3:] == i[-3:]:\n",
-        "        st.write(\"對中 200 元！\")    # 末三碼相同\n",
-        "        break\n",
-        "    else:\n",
-        "      st.write(\"再接再厲下次加油\")\n",
-        "      break"
-      ]
-    },
-    {
-      "cell_type": "code",
-      "source": [
-        "try:\n",
-        "  !jupyter nbconvert --to python Untitled7.ipynb\n",
-        "\n",
-        "except:\n",
-        "  pass"
-      ],
-      "metadata": {
-        "colab": {
-          "base_uri": "https://localhost:8080/"
-        },
-        "id": "e4ywNoz1t-8c",
-        "outputId": "363d2ba9-b60f-4bea-9f32-2a7a7abad781"
-      },
-      "execution_count": 2,
-      "outputs": [
-        {
-          "output_type": "stream",
-          "name": "stdout",
-          "text": [
-            "[NbConvertApp] WARNING | pattern 'Untitled7.ipynb' matched no files\n",
-            "This application is used to convert notebook files (*.ipynb)\n",
-            "        to various other formats.\n",
-            "\n",
-            "        WARNING: THE COMMANDLINE INTERFACE MAY CHANGE IN FUTURE RELEASES.\n",
-            "\n",
-            "Options\n",
-            "=======\n",
-            "The options below are convenience aliases to configurable class-options,\n",
-            "as listed in the \"Equivalent to\" description-line of the aliases.\n",
-            "To see all configurable class-options for some <cmd>, use:\n",
-            "    <cmd> --help-all\n",
-            "\n",
-            "--debug\n",
-            "    set log level to logging.DEBUG (maximize logging output)\n",
-            "    Equivalent to: [--Application.log_level=10]\n",
-            "--show-config\n",
-            "    Show the application's configuration (human-readable format)\n",
-            "    Equivalent to: [--Application.show_config=True]\n",
-            "--show-config-json\n",
-            "    Show the application's configuration (json format)\n",
-            "    Equivalent to: [--Application.show_config_json=True]\n",
-            "--generate-config\n",
-            "    generate default config file\n",
-            "    Equivalent to: [--JupyterApp.generate_config=True]\n",
-            "-y\n",
-            "    Answer yes to any questions instead of prompting.\n",
-            "    Equivalent to: [--JupyterApp.answer_yes=True]\n",
-            "--execute\n",
-            "    Execute the notebook prior to export.\n",
-            "    Equivalent to: [--ExecutePreprocessor.enabled=True]\n",
-            "--allow-errors\n",
-            "    Continue notebook execution even if one of the cells throws an error and include the error message in the cell output (the default behaviour is to abort conversion). This flag is only relevant if '--execute' was specified, too.\n",
-            "    Equivalent to: [--ExecutePreprocessor.allow_errors=True]\n",
-            "--stdin\n",
-            "    read a single notebook file from stdin. Write the resulting notebook with default basename 'notebook.*'\n",
-            "    Equivalent to: [--NbConvertApp.from_stdin=True]\n",
-            "--stdout\n",
-            "    Write notebook output to stdout instead of files.\n",
-            "    Equivalent to: [--NbConvertApp.writer_class=StdoutWriter]\n",
-            "--inplace\n",
-            "    Run nbconvert in place, overwriting the existing notebook (only \n",
-            "            relevant when converting to notebook format)\n",
-            "    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory=]\n",
-            "--clear-output\n",
-            "    Clear output of current file and save in place, \n",
-            "            overwriting the existing notebook.\n",
-            "    Equivalent to: [--NbConvertApp.use_output_suffix=False --NbConvertApp.export_format=notebook --FilesWriter.build_directory= --ClearOutputPreprocessor.enabled=True]\n",
-            "--no-prompt\n",
-            "    Exclude input and output prompts from converted document.\n",
-            "    Equivalent to: [--TemplateExporter.exclude_input_prompt=True --TemplateExporter.exclude_output_prompt=True]\n",
-            "--no-input\n",
-            "    Exclude input cells and output prompts from converted document. \n",
-            "            This mode is ideal for generating code-free reports.\n",
-            "    Equivalent to: [--TemplateExporter.exclude_output_prompt=True --TemplateExporter.exclude_input=True]\n",
-            "--log-level=<Enum>\n",
-            "    Set the log level by value or name.\n",
-            "    Choices: any of [0, 10, 20, 30, 40, 50, 'DEBUG', 'INFO', 'WARN', 'ERROR', 'CRITICAL']\n",
-            "    Default: 30\n",
-            "    Equivalent to: [--Application.log_level]\n",
-            "--config=<Unicode>\n",
-            "    Full path of a config file.\n",
-            "    Default: ''\n",
-            "    Equivalent to: [--JupyterApp.config_file]\n",
-            "--to=<Unicode>\n",
-            "    The export format to be used, either one of the built-in formats\n",
-            "            ['asciidoc', 'custom', 'html', 'latex', 'markdown', 'notebook', 'pdf', 'python', 'rst', 'script', 'slides']\n",
-            "            or a dotted object name that represents the import path for an\n",
-            "            `Exporter` class\n",
-            "    Default: 'html'\n",
-            "    Equivalent to: [--NbConvertApp.export_format]\n",
-            "--template=<Unicode>\n",
-            "    Name of the template file to use\n",
-            "    Default: ''\n",
-            "    Equivalent to: [--TemplateExporter.template_file]\n",
-            "--writer=<DottedObjectName>\n",
-            "    Writer class used to write the \n",
-            "                                        results of the conversion\n",
-            "    Default: 'FilesWriter'\n",
-            "    Equivalent to: [--NbConvertApp.writer_class]\n",
-            "--post=<DottedOrNone>\n",
-            "    PostProcessor class used to write the\n",
-            "                                        results of the conversion\n",
-            "    Default: ''\n",
-            "    Equivalent to: [--NbConvertApp.postprocessor_class]\n",
-            "--output=<Unicode>\n",
-            "    overwrite base name use for output files.\n",
-            "                can only be used when converting one notebook at a time.\n",
-            "    Default: ''\n",
-            "    Equivalent to: [--NbConvertApp.output_base]\n",
-            "--output-dir=<Unicode>\n",
-            "    Directory to write output(s) to. Defaults\n",
-            "                                  to output to the directory of each notebook. To recover\n",
-            "                                  previous default behaviour (outputting to the current \n",
-            "                                  working directory) use . as the flag value.\n",
-            "    Default: ''\n",
-            "    Equivalent to: [--FilesWriter.build_directory]\n",
-            "--reveal-prefix=<Unicode>\n",
-            "    The URL prefix for reveal.js (version 3.x).\n",
-            "            This defaults to the reveal CDN, but can be any url pointing to a copy \n",
-            "            of reveal.js. \n",
-            "            For speaker notes to work, this must be a relative path to a local \n",
-            "            copy of reveal.js: e.g., \"reveal.js\".\n",
-            "            If a relative path is given, it must be a subdirectory of the\n",
-            "            current directory (from which the server is run).\n",
-            "            See the usage documentation\n",
-            "            (https://nbconvert.readthedocs.io/en/latest/usage.html#reveal-js-html-slideshow)\n",
-            "            for more details.\n",
-            "    Default: ''\n",
-            "    Equivalent to: [--SlidesExporter.reveal_url_prefix]\n",
-            "--nbformat=<Enum>\n",
-            "    The nbformat version to write.\n",
-            "            Use this to downgrade notebooks.\n",
-            "    Choices: any of [1, 2, 3, 4]\n",
-            "    Default: 4\n",
-            "    Equivalent to: [--NotebookExporter.nbformat_version]\n",
-            "\n",
-            "Examples\n",
-            "--------\n",
-            "\n",
-            "    The simplest way to use nbconvert is\n",
-            "\n",
-            "            > jupyter nbconvert mynotebook.ipynb\n",
-            "\n",
-            "            which will convert mynotebook.ipynb to the default format (probably HTML).\n",
-            "\n",
-            "            You can specify the export format with `--to`.\n",
-            "            Options include ['asciidoc', 'custom', 'html', 'latex', 'markdown', 'notebook', 'pdf', 'python', 'rst', 'script', 'slides'].\n",
-            "\n",
-            "            > jupyter nbconvert --to latex mynotebook.ipynb\n",
-            "\n",
-            "            Both HTML and LaTeX support multiple output templates. LaTeX includes\n",
-            "            'base', 'article' and 'report'.  HTML includes 'basic' and 'full'. You\n",
-            "            can specify the flavor of the format used.\n",
-            "\n",
-            "            > jupyter nbconvert --to html --template basic mynotebook.ipynb\n",
-            "\n",
-            "            You can also pipe the output to stdout, rather than a file\n",
-            "\n",
-            "            > jupyter nbconvert mynotebook.ipynb --stdout\n",
-            "\n",
-            "            PDF is generated via latex\n",
-            "\n",
-            "            > jupyter nbconvert mynotebook.ipynb --to pdf\n",
-            "\n",
-            "            You can get (and serve) a Reveal.js-powered slideshow\n",
-            "\n",
-            "            > jupyter nbconvert myslides.ipynb --to slides --post serve\n",
-            "\n",
-            "            Multiple notebooks can be given at the command line in a couple of \n",
-            "            different ways:\n",
-            "\n",
-            "            > jupyter nbconvert notebook*.ipynb\n",
-            "            > jupyter nbconvert notebook1.ipynb notebook2.ipynb\n",
-            "\n",
-            "            or you can specify the notebooks list in a config file, containing::\n",
-            "\n",
-            "                c.NbConvertApp.notebooks = [\"my_notebook.ipynb\"]\n",
-            "\n",
-            "            > jupyter nbconvert --config mycfg.py\n",
-            "\n",
-            "To see all available configurables, use `--help-all`.\n",
-            "\n"
-          ]
-        }
-      ]
-    }
-  ]
-}
+import streamlit as st
+st.title ("2022年最新發票兌獎程式")
+st.text_input('輸入您的發票號碼')
+ns = '05701942'                         # 特別獎
+n1 = '97718570'                         # 特獎
+n2 = ['88400675','73475574','53038222'] # 頭獎
+if num == ns: st.write("對中 1000 萬元！")   # 對中特別獎
+if num == n1: st.write("對中 200 萬元！")    # 對中特獎
+# 頭獎判斷
+for i in n2:
+    if num == i:
+        st.write("對中 20 萬元！")   # 對中頭獎
+        break
+    if num[-7:] == i[-7:]:
+        st.write("對中 4 萬元！")    # 末七碼相同
+        break
+    if num[-6:] == i[-6:]:
+        st.write("對中 1 萬元！")    # 末六碼相同
+        break
+    if num[-5:] == i[-5:]:
+        st.write("對中 4000 元"')   # 末五碼相同
+        break
+    if num[-4:] == i[-4:]:
+        st.write("對中 1000 元！")   # 末四碼相同
+        break
+    if num[-3:] == i[-3:]:
+        st.write("對中 200 元！")    # 末三碼相同
+        break
+    else:
+      st.write("再接再厲下次加油")
+      brea
