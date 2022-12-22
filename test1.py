@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.sidebar.image("電子發票.")
+st.sidebar.image("電子發票.jpg")
 st.title ("2022年最新發票兌獎程式")
 st.image("最新發票號碼.jpg")
 num=st.text_input('輸入您的發票號碼')
