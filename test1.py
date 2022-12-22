@@ -39,6 +39,7 @@ for i in n2:
         break
         
 for i in n3:
+    
     elif num != n3:
         st.write("再接再厲")
         break
