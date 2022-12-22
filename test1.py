@@ -13,6 +13,10 @@ if num == ns: st.write("對中 1000 萬元！")
 if num == ns: st.image("恭喜中獎.jpg")
 if num == n1: st.write("對中 200 萬元！")
 if num == n1: st.image("恭喜中獎.jpg")
+if num != n3: 
+      st.write("再接再厲")
+      break
+
 
 for i in n2:
 
@@ -39,13 +43,4 @@ for i in n2:
     elif num[-3:] == i[-3:]:
         st.write("對中 200 元！")  
         st.image("恭喜中獎.jpg")
-        break
-    elif num[-2:] == i[-2:]:
-        st.write("再接再厲")  
-        break
-    elif num[-1:] == i[-1:]:
-        st.write("再接再厲")  
-        break
-    elif num[-0:] == i[-0:]:
-        st.write("再接再厲")  
         break
