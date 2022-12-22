@@ -1,4 +1,5 @@
 import streamlit as st
+st.sidebar.image("電子發票.")
 st.title ("2022年最新發票兌獎程式")
 st.image("最新發票號碼.jpg")
 num=st.text_input('輸入您的發票號碼')
@@ -37,9 +38,4 @@ for i in n2:
         st.write("對中 200 元！")  
         st.image("恭喜中獎.jpg")
         break
-        
-for i in n3:
-    
-    if num != n3:
-        st.write("再接再厲")
-        break
+    elif num[
