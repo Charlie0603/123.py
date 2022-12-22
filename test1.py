@@ -37,6 +37,8 @@ for i in n2:
         st.write("對中 200 元！")  
         st.image("恭喜中獎.jpg")
         break
+        
+for i in n3:
     elif num != n3:
         st.write("再接再厲")
         break
