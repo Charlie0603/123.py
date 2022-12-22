@@ -14,6 +14,7 @@ if num == ns: st.image("恭喜中獎.jpg")
 if num == n1: st.write("對中 200 萬元！")
 if num == n1: st.image("恭喜中獎.jpg")
 if num[-3:] == ns[-3:]: st.write("注意特別獎喔!")
+if num[-3:] == n1[-3:]: st.write("注意特獎喔!")
 
 
 for i in n2:
