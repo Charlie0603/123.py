@@ -41,8 +41,10 @@ for i in n2:
         st.success("對中 1000 元")
         st.image("恭喜中獎.jpg")
         break
-    elif num[-3:] == i[-3:]:
-        st.success("對中 200 元！")
+     elif num[-3:] == i[-3:]:
+        st.success("對中 200 元")
         st.image("恭喜中獎.jpg")
         break
+     elif num[-2:] == i[-2:]:
+        st.success("再接再厲")
         
