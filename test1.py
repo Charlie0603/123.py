@@ -46,4 +46,3 @@ for i in n2:
         st.image("恭喜中獎.jpg")
         break
 if num != n1: st.warning("再接再厲")
-if num != ns: st.warning("再接再厲")
