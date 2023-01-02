@@ -45,6 +45,4 @@ for i in n2:
         st.success("對中 200 元")
         st.image("恭喜中獎.jpg")
         break
-    else:
-        st.success("再接再厲")
-        break
+
