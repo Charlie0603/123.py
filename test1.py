@@ -2,7 +2,7 @@ import streamlit as st
 import time
 
 st.balloons()
-st.sidebar.image("雲端發票.jpg")
+st.sidebar.image("雲端發票.JPG")
 st.sidebar.title("電子發票指利用網際網路或其他電子方式，開立、傳輸或接收的統一發票。 它包含雲端發票及電子發票證明聯。")
 st.title ("2022年最新發票兌獎程式")
 st.image("最新發票號碼.jpg")
