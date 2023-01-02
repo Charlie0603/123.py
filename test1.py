@@ -15,7 +15,6 @@ if num == ns: st.success("對中 1000 萬元！")
 if num == ns: st.image("恭喜中獎.jpg")
 if num == n1: st.success("對中 200 萬元！")
 if num == n1: st.image("恭喜中獎.jpg")
-if num != n1: st.warning("再接再厲")
 if num[-3:] == ns[-3:]: st.warning("注意特別獎喔!")
 if num[-3:] == n1[-3:]: st.warning("注意特獎喔!")
 
