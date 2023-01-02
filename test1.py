@@ -47,4 +47,4 @@ for i in n2:
         break
      elif num[-2:] == i[-2:]:
         st.success("再接再厲")
-        
+        break
