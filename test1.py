@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 #rom bs4 import BeautifulSoup
 import re
-import "requirements.txt"
+import requirements
 import setup.sh
 
 from requests.api import patch
