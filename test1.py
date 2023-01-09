@@ -3,6 +3,12 @@ import requests
 from bs4 import BeautifulSoup
 import re
 import requirements.txt
+pylint==1.6.5
+PyMySQL==0.6.7
+streamlit==0.79.0 
+requests==2.25.1 
+lxml==4.6.3 
+beautifulsoup4==4.9.3
 
 from requests.api import patch
 url1 = 'https://invoice.etax.nat.gov.tw/'
