@@ -11,7 +11,6 @@ all1 = sp.find("table", class_="etw-table-bgbox etw-tbig")
 
 tb = sp.find('span', class_='font-weight-bold etw-color-red')
 st.write("特別獎:", tb.text)
-#可用replace替代調文本內文字
 t = sp.find_all('span', class_='font-weight-bold etw-color-red')[1]
 st.write("特獎:", t.text)
 
