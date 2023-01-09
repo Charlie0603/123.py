@@ -1,5 +1,29 @@
 import streamlit as st
-import time
+import requests
+from bs4 import BeautifulSoup
+import re
+
+from requests.api import patch
+url1 = 'https://invoice.etax.nat.gov.tw/'
+html1 = requests.get(url1)
+sp = BeautifulSoup(html1.text, 'lxml')
+all1 = sp.find("table", class_="etw-table-bgbox etw-tbig")
+
+tb = sp.find('span', class_='font-weight-bold etw-color-red')
+st.write("特別獎:", tb.text)
+#可用replace替代調文本內文字
+t = sp.find_all('span', class_='font-weight-bold etw-color-red')[1]
+st.write("特獎:", t.text)
+
+head1 = sp.find("p", class_="etw-tbiggest mb-md-4")
+head2 = sp.find_all("p", class_="etw-tbiggest mb-md-4")[1]
+head3 = sp.find_all("p", class_="etw-tbiggest mb-md-4")[2]
+st.write("頭獎:", head1.text, end="")
+st.write(head2.text, end="")
+st.write(head3.text)
+
+add1 = sp.find_all("span", class_="font-weight-bold etw-color-red")
+st.write("增開六獎:", add1[-1].text)
 
 st.balloons()
 st.sidebar.image("雲端發票.JPG")
@@ -10,7 +34,6 @@ num=st.text_input('輸入您的發票號碼')
 ns = '11174120' 
 n1 = '59276913'                        
 n2 = ['18079936','20591738','64500205']
-n3 = ['ns','n1','n2']
 if num == ns: st.success("對中 1000 萬元！")
 if num == ns: st.image("恭喜中獎.jpg")
 if num == n1: st.success("對中 200 萬元！")
