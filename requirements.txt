@@ -1,5 +1,5 @@
-#pylint==1.6.5
-#PyMySQL==0.6.7
+pylint==1.6.5
+PyMySQL==0.6.7
 streamlit==0.79.0 
 requests==2.25.1 
 lxml==4.6.3 
