@@ -1,1 +1,1 @@
-Beautifulsoup == 0.0.1
+Beautifulsoup==0.0.1
