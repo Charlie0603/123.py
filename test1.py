@@ -3,7 +3,7 @@ import requests
 #rom bs4 import BeautifulSoup
 import re
 #import requirements
-import setup.sh
+#import setup.sh
 
 from requests.api import patch
 url1 = 'https://invoice.etax.nat.gov.tw/'
