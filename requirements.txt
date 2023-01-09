@@ -1,3 +1,6 @@
+import requests
+from bs4 import BeautifulSoup as bs
+import lxml.etree as xml
+import lxml
 pylint==1.6.5
 PyMySQL==0.6.7
-pip install beautifulsoup4
