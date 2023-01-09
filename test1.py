@@ -2,6 +2,7 @@ import streamlit as st
 import requests
 from bs4 import BeautifulSoup
 import re
+import requirements.txt
 
 from requests.api import patch
 url1 = 'https://invoice.etax.nat.gov.tw/'
