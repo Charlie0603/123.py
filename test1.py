@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-#rom bs4 import BeautifulSoup
+rom bs4 import BeautifulSoup
 import re
 #import requirements
 #import setup.sh
